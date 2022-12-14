@@ -1,0 +1,190 @@
+// Chicago Design System variables
+// These variables use Bootstrap & USWDS naming conventions to communicate colors.
+
+// Chicago Design System Colors
+
+// fusv-disable
+
+$color-black:                #000000 !default;
+$color-bkgd-gray-cool-dark:  #112E51 !default;
+$color-bkgd-gray-dark:       #323A45 !default;
+$color-bkgd-gray-warm-dark:  #494440 !default;
+$color-bkgd-gray:            #5B616B !default;
+$color-bkgd-gray-light:      #AEB0B5 !default;
+$color-bkgd-gray-lighter:    #D6D7D9 !default;
+$color-gray-cool-light:      #DCE4EF !default;
+$color-bkgd-gray-warm-light: #E4E2E0 !default;
+$color-gray-dark:            #4D4D4D !default;
+$color-gray-darkest:         #212121 !default;
+$color-gray-light:           #B3B3B3 !default;
+$color-gray-lighter:         #D9D9D9 !default;
+$color-gray-lightest:        #F1F1F1 !default;
+$color-white:                #ffffff !default;
+
+$gray-100: $color-gray-lightest !default;            // #f8f9fa
+$gray-200: $color-bkgd-gray-warm-light !default;     // #e9ecef
+$gray-300: $color-gray-cool-light !default;          // #dee2e6
+$gray-400: $color-bkgd-gray-lighter !default;        // #ced4da
+$gray-500: $color-bkgd-gray-light !default;          // #adb5bd
+$gray-600: $color-bkgd-gray !default;                // #6c757d
+$gray-700: $color-bkgd-gray-warm-dark !default;      // #495057
+$gray-800: $color-bkgd-gray-dark !default;           // #343a40
+$gray-900: $color-gray-darkest !default;      // #212121
+$black:    $color-black !default;
+
+$color-star-red:             #E4002B !default;
+$color-malibu-blue:          #0075BB !default;
+$color-flag-blue:             $color-malibu-blue !default;
+$color-orange:               #F2711C !default;
+$color-red-dark:             #CC393E !default;
+$color-gold:                 #FDB81E !default;
+$color-green:                #2E8540 !default;
+$color-purple:               #A333C8 !default;
+
+$color-bahama-blue:          #005B99 !default;
+
+$blue:     $color-malibu-blue !default;
+$indigo:   #6610f2 !default;
+$purple:   $color-purple !default;
+$pink:     #d63384 !default;
+$red:      $color-star-red !default;
+$orange:   $color-orange !default;
+$yellow:   $color-gold !default;
+$green:    $color-green !default;
+$teal:     #20c997 !default;
+$cyan:     $color-flag-blue !default;
+
+
+$blue-100: #CCE3F1 !default;
+$blue-200: #B3D6EB !default;
+$blue-300: #99C8E4 !default;
+$blue-400: #80BADD !default;
+$blue-500: #66ACD6 !default;
+$blue-600: #4D9ECF !default;
+$blue-700: #3391C9 !default;
+$blue-800: #1A83C2 !default;
+$blue-900: #005485 !default;
+
+$red-100: #FACCD5 !default;
+$red-200: #F7B3BF !default;
+$red-300: #F499AA !default;
+$red-400: #F28095 !default;
+$red-500: #EF6680 !default;
+$red-600: #EC4D6B !default;
+$red-700: #E93355 !default;
+$red-800:   $red !default;
+
+$yellow-100: #FEE3A5 !default;
+$yellow-200: #FEDC8F !default;
+$yellow-300: #FED478 !default;
+$yellow-400: #FECD62 !default;
+$yellow-500: #FDC64B !default;
+$yellow-600: #FDBF35 !default;
+$yellow-700: $yellow !default;
+
+$green-100: #ABCEB3 !default;
+$green-200: #97C2A0 !default;
+$green-300: #82B68C !default;
+$green-400: #6DAA79 !default;
+$green-500: #589D66 !default;
+$green-600: #439153 !default;
+$green-700: $green !default;
+
+$orange-100: #fbd4bb !default;
+$orange-200: #f9b88e !default;
+$orange-300: #f7aa77 !default;
+$orange-400: #f69c60 !default;
+$orange-500: #f58d49 !default;
+$orange-600: #f37f33 !default;
+$orange-700: $orange !default;
+
+$purple-100: #edd6f4 !default;
+$purple-200: #daade9 !default;
+$purple-300: #c885de !default;
+$purple-400: #bf70d9 !default;
+$purple-500: #b55cd3 !default;
+$purple-600: #ac47ce !default;
+$purple-700: $purple !default;
+
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-logo:                  'Big Shoulders Text', sans-serif;
+$font-sans:                  'Lora', Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-serif:                 Roboto, serif;
+
+@include google-font(Roboto, 100 300 500 700, italic normal);
+@include google-font("Big Shoulders Text", 100 200 300 400 500 600 700 800 900, light medium regular black bold extrabold semibold thin);
+@include google-font(Lora, 400 700, italic normal);
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif:      $font-sans !default;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+// stylelint-enable value-keyword-case
+
+// $font-size-root effects the value of `rem`, which is used for as well font sizes, paddings and margins
+// $font-size-base effects the font size of the body text
+$font-size-root:              null !default;
+$font-size-base:              1.5rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg:                $font-size-base * 1.25 !default;
+$font-size-sm:                $font-size-base * .875 !default;
+
+$font-weight-lighter:         lighter !default;
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-bold:            700 !default;
+$font-weight-bolder:          bolder !default;
+
+$font-weight-base:            $font-weight-normal !default;
+
+$line-height-base:            1.5 !default;
+$line-height-lg:              2 !default;
+$line-height-sm:              1.25 !default;
+
+$h1-font-size:                4.4rem !default; //$font-size-base * 2.93 !default;
+$h2-font-size:                3.4rem !default; //$font-size-base * 2.27 !default;
+$h3-font-size:                2.4rem !default; //$font-size-base * 1.6 !default;
+$h4-font-size:                1.9rem !default; //$font-size-base * 1.27 !default;
+$h5-font-size:                1.5rem !default; //$font-size-base !default;
+$h6-font-size:                1.3rem !default; //$font-size-base !default;
+
+$headings-font-family:        $font-serif !default;
+
+// Navbar overrrides
+$navbar-padding-y:                  0 !default; //$spacer / 2 !default;
+$navbar-padding-x:                  15px !default;
+$navbar-nav-link-padding-x:         .5rem !default;
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+
+$input-btn-padding-y:         .575rem !default;
+$input-btn-padding-x:         .75rem !default;
+
+
+// Forms
+$form-group-margin-bottom:     1.5rem !default; 
+
+$input-border-color:                    $gray-600 !default;
+
+$input-border-radius:                   0 !default;
+$input-border-radius-lg:                0 !default;
+$input-border-radius-sm:                0 !default;
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background, and border color.
+$btn-font-family:             $font-serif !default; //Overrride to use Roboto
+
+//UNICODE Workaround
+
+@function unicode($str) {
+    @return unquote("\"")+unquote(str-insert($str, "\\", 1))+unquote("\"")
+}
+
+$plus-sign:                unicode("f068") !default;
+$minus-sign:               unicode("f067") !default;

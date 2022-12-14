@@ -1,0 +1,86 @@
+/*!
+ * Chicago Design System v0.9.2
+ * Licensed under MIT (https://github.com/Chicago/design-cds-bootstrap/blob/master/LICENSE.md)
+ */
+@import '_google-font';
+@import "variables";
+@import "../bootstrap/scss/bootstrap.scss";
+
+/*
+rem ratio conversion 1:10 to pixels
+*/
+html {
+	font-size:62.5%;
+}
+
+/* H6 force upprecase */
+h6 {
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+/*
+Focus state
+*/
+.cds-focus, [contentEditable=true]:focus, [href]:focus, [tabindex]:focus, button:not([disabled]):focus, iframe:focus, input:not([disabled]):focus, select:not([disabled]):focus, textarea:not([disabled]):focus {
+	outline: .3rem dashed $blue;
+	outline-offset: 1;
+}
+
+/*
+Content height
+Sets minimun content height as the 50% of the Viewport, keeps footer at the bottom of the page when content is not enough to fill it.
+*/
+.cds-content-main {
+	min-height: 50vh;
+}
+
+/*
+site seal
+*/
+@import "cds-siteseal";
+/*
+nav
+*/
+@import "cds-navbar";
+/*
+footer
+*/
+@import "cds-footer";
+/*
+forms
+*/
+@import "cds-forms";
+/*
+COMPONENTS
+pagination
+*/
+@import "cds-pagination";
+/*
+breadcrumb
+*/
+@import "cds-breadcrumb";
+/*
+badge
+*/
+@import "cds-badge";
+/*
+alerts
+*/
+@import "cds-alert";
+/*
+Collapse
+*/
+@import "cds-collapse";
+/*
+Hero
+*/
+@import "cds-hero";
+/*
+Card
+*/
+@import "cds-card";
+/*
+Table
+*/
+@import "cds-table";
